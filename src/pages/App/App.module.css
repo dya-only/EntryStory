@@ -14,7 +14,7 @@
 
 .header {
   z-index: 10;
-  width: 80vw;
+  width: 88vw;
   height: 145px;
   background: white;
 
@@ -61,7 +61,8 @@
 }
 
 .img_contain {
-  width: 68vw;
+  width: 75vw;
+  z-index: 0;
 }
 
 .entry {
@@ -70,6 +71,7 @@
 }
 
 .enter {
+  z-index: 20;
   margin-top: 50px;
   width: 794px;
   height: 207px;

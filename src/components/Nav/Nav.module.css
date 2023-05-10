@@ -24,13 +24,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .item {
   font-weight: 500;
   font-size: 16px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .profile {
@@ -69,4 +71,41 @@
 .profile_btn:hover {
   background: #E2E2E2;
   transition-duration: .3s;
+}
+
+.window_img {
+  width: 76px;
+  height: 76px;
+  cursor: pointer;
+}
+
+.window_name {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.window_border {
+  width: 246px;
+  height: 1px;
+  background: #CBCBCB;
+}
+
+.window_menu_contain {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.window_menu {
+  color: #9a9a9a;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.window_menu:hover {
+  color: black;
+  cursor: pointer;
 }

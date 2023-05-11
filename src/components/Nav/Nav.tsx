@@ -1,4 +1,4 @@
-import { Fragment, useRef, useState } from 'react'
+import { useState } from 'react'
 import Styled from 'styled-components'
 import style from './Nav.module.css'
 
@@ -52,6 +52,15 @@ function Nav() {
           <div className={style.item}>커뮤니티</div>
         </div>
         
+        {/* { sessionStorage.getItem('Name') !== null ?
+        <div className={style.profile}>
+          <img className={style.icon} src="https://playentry.org/img/IcoTopSearch.svg" alt="" />
+          <img className={style.icon} src="https://playentry.org/img/IcoTopAlarm.svg" alt="" />
+          <button onClick={onClickProfile} className={style.profile_btn}>
+            <img className={style.profile_img} src="https://playentry.org/uploads/87/4w/874wed1gklsv5s5w003hf51f2bgj6ui2.svg" alt="" />
+          </button>
+        </div>
+        : <button className={style.login}>로그인</button> } */}
         <div className={style.profile}>
           <img className={style.icon} src="https://playentry.org/img/IcoTopSearch.svg" alt="" />
           <img className={style.icon} src="https://playentry.org/img/IcoTopAlarm.svg" alt="" />
@@ -60,18 +69,19 @@ function Nav() {
           </button>
         </div>
 
-          <StyledSq className={style.square} />
-          <StyledWindow className={style.window}>
-            <img className={style.window_img} src="https://playentry.org/uploads/87/4w/874wed1gklsv5s5w003hf51f2bgj6ui2.svg" alt="" />
-            <h3 className={style.window_name}>entry</h3>
-            <div className={style.window_border} />
-            <div className={style.window_menu_contain}>
-              <div className={style.window_menu}>마이페이지</div>
-              <div className={style.window_menu}>나의 학급</div>
-              <div className={style.window_menu}>회원 정보 수정</div>
-              <div className={style.window_menu}>로그아웃</div>
-            </div>
-          </StyledWindow>
+        <StyledSq className={style.square} />
+        <StyledWindow className={style.window}>
+          <img className={style.window_img} src="https://playentry.org/uploads/87/4w/874wed1gklsv5s5w003hf51f2bgj6ui2.svg" alt="" />
+          <h3 className={style.window_name}>entry</h3>
+          <div className={style.window_border} />
+          <div className={style.window_menu_contain}>
+            <div className={style.window_menu}>마이페이지</div>
+            <div className={style.window_menu}>나의 학급</div>
+            <div className={style.window_menu}>회원 정보 수정</div>
+            <div className={style.window_menu}>로그아웃</div>
+          </div>
+        </StyledWindow>
+
       </nav>
     </div>
   )

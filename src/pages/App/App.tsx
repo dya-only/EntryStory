@@ -134,8 +134,14 @@ function App() {
                 <div className={style.card_name}>entry</div>
                 <div className={style.card_date}>2023.</div>
                 <div className={style.card_content}>{ e.content }</div>
+                <div className={style.like}>
+                  <img className={style.like_svg} src="https://playentry.org/img/IcoCmtLike.svg" alt="" />
+                  <div className={style.like_text}>좋아요 0</div>
+                  <img className={style.like_svg} src="https://playentry.org/img/IcoCmtReply.svg" alt="" />
+                  <div className={style.like_text}>댓글 0</div>
+                </div>
+                </div>
               </div>
-            </div>
           ))}
 
           <footer className={style.footer}></footer>

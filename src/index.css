@@ -5,6 +5,7 @@ html, body {
   font-family: 'Noto Sans KR', sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  overflow-x: none;
 
   background-color: #F2F2F2;
   color: black;

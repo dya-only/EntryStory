@@ -205,6 +205,9 @@
   font-weight: 400;
   font-size: 14px;
   margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .card_img {
@@ -229,6 +232,7 @@
   font-size: 16px;
   font-weight: 400;
   margin-right: 50px;
+  margin-bottom: 10px;
 }
 
 .footer {
@@ -353,7 +357,28 @@
   display: none;
 }
 
-@media (max-width: 1200px) {
+.like {
+  color: #979797;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.like_svg {
+  margin-right: 10px;
+}
+
+.like_text {
+  margin-right: 20px;
+  transition-duration: .3s;
+  cursor: pointer;
+}
+.like_text:hover {
+  color: #12D8A2;
+  transition-duration: .3s;
+}
+
+@media (max-width: 1000px) {
   .header {
     width: 100vw;
     display: flex;
@@ -401,7 +426,7 @@
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .bg {
     background: #F2F2F2;
   }

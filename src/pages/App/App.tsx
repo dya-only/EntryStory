@@ -99,6 +99,7 @@ function App() {
             <FontAwesomeIcon icon={faSearch} className={style.search_icon} />
             <input type="text" className={style.search} />
           </div>
+          <FontAwesomeIcon icon={faSearch} className={style.m_search} />
         </div>
 
         <div className={style.img_contain}>

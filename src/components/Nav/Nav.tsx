@@ -5,13 +5,12 @@ import style from './Nav.module.css'
 
 function Nav() {
   const [windowStatus, setWindowStatus] = useState('none')
-  const [squareStatus, setSquareStatus] = useState('none')
   const StyledWindow = Styled.div`
     display: ${windowStatus};
     position: absolute;
     z-index: 40;
     left: 70%;
-    top: 12.5%;
+    top: 100px;
     width: 246px;
     height: 333px;
     border-radius: 20px;
@@ -21,25 +20,24 @@ function Nav() {
     justify-content: center;
     align-items: center;
   `
-  const StyledSq = Styled.div`
-    display: ${squareStatus};
-    position: absolute;
-    z-index: 50;
-    left: 84.6%;
-    top: 12%;
-    width: 10px;
-    height: 10px;
-    rotate: 45deg;
-    background: white;
-    border-top: 1px #E2E2E2 solid;
-    border-left: 1px #E2E2E2 solid;
-  `
+  // const StyledSq = Styled.div`
+  //   display: ${squareStatus};
+  //   position: absolute;
+  //   z-index: 50;
+  //   left: 1180px;
+  //   top: 12%;
+  //   width: 10px;
+  //   height: 10px;
+  //   rotate: 45deg;
+  //   background: white;
+  //   border-top: 1px #E2E2E2 solid;
+  //   border-left: 1px #E2E2E2 solid;
+  // `
  
   const onClickProfile = () => {
-    if (windowStatus == 'none') { setWindowStatus('flex'); setSquareStatus('block') }
-    else { setWindowStatus('none'); setSquareStatus('none') }
+    if (windowStatus == 'none') { setWindowStatus('flex') }
+    else { setWindowStatus('none') }
   }
-
   return (
     <div className={style.contain}>
       <nav className={style.nav}>
@@ -67,9 +65,10 @@ function Nav() {
           <button onClick={onClickProfile} className={style.profile_btn}>
             <img className={style.profile_img} src="https://playentry.org/uploads/87/4w/874wed1gklsv5s5w003hf51f2bgj6ui2.svg" alt="" />
           </button>
+          <img className={style.more_btn} src="https://playentry.org/img/IcoTopHambergerM.svg" alt="" />
         </div>
 
-        <StyledSq className={style.square} />
+        {/* <StyledSq className={style.square} /> */}
         <StyledWindow className={style.window}>
           <img className={style.window_img} src="https://playentry.org/uploads/87/4w/874wed1gklsv5s5w003hf51f2bgj6ui2.svg" alt="" />
           <h3 className={style.window_name}>entry</h3>

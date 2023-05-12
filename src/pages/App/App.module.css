@@ -14,7 +14,7 @@
 
 .header {
   z-index: 10;
-  width: 88vw;
+  width: 1062px;
   height: 145px;
   background: white;
 
@@ -24,14 +24,14 @@
 }
 
 .title {
-  margin-left: 90px;
+  margin-left: 0px;
   margin-bottom: 25px;
   font-size: 34px;
   font-weight: 500;
 }
 
 .search_contain {
-  margin-right: 90px;
+  margin-right: 0px;
   margin-bottom: 30px;
   display: flex;
   align-items: center;
@@ -61,7 +61,7 @@
 }
 
 .img_contain {
-  width: 75vw;
+  width: 1062px;
   z-index: 0;
 }
 
@@ -347,4 +347,135 @@
 
 .warn_info_content {
   margin: 25px;
+}
+
+.m_search {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .title {
+    margin-left: 18px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 33px;
+  }
+
+  .entry {
+    display: none;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .search_contain {
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+
+  .enter {
+    width: 95vw;
+    height: 259px;
+  }
+
+  .enter_content {
+    height: 90px;
+  }
+
+  .search {
+    width: 150px;
+    height: 40px;
+  }
+
+  .set_contain {
+    width: 94.5vw;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .bg {
+    background: #F2F2F2;
+  }
+  .header {
+    background: #F2F2F2;
+    width: 100vw;
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -50px;
+  }
+
+  .title {
+    margin-left: 18px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .entry {
+    display: none;
+  }
+
+  .enter_logo {
+    display: none;
+  }
+
+  .m_search {
+    display: block;
+  }
+
+  .search_contain {
+    display: none;
+  }
+
+  .m_search {
+    display: block;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    color: rgb(89, 89, 89);
+  }
+
+  .enter_contain {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 30px;
+  }
+
+  .enter_content {
+    margin: 10px;
+    height: 60px;
+  }
+
+  .submit {
+    width: 66px;
+  }
+
+  .enter_menu {
+    margin-left: 20px;
+    width: 88%;
+  }
+
+  .enter {
+    width: 90%;
+    height: 210px;
+  }
+
+  .warn {
+    margin-left: 20px;
+  }
+
+  .set_contain {
+    width: 89vw;
+  }
 }

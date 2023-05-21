@@ -20,15 +20,17 @@ function App() {
   useEffect(() => {
     const getContents = async () => {
       const resp = (await axios.get('/api/content')).data
-      if (resp.length > 10) {
-        for (let i = (resp.length - 10); i < resp.length; i++) {
+      if (resp.length > 20) {
+        for (let i = (resp.length - 20); i < resp.length; i++) {
           setContent(resp[i])
           contents.push(resp[i])
+          log(content)
         }
       } else {
         for (let i = 0; i < resp.length; i++) {
           setContent(resp[i])
           contents.push(resp[i])
+          log(content)
         }
       }
       setContents(contents.reverse())
